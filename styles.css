@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}/*esto reinicia los estilos del navegador y hace que todo se vea iagual en todos los navegadores*/
+    .HEADER{display: flex;
+    justify-content: space-between;}
+    .contenedor1 {
+        height: 9.375rem;/*ESTO ES LO QUE LE DA ALTULA AL CONTENEDOR*/
+        background-image:url(/IMAGENES/FONDO\ AMARILLLO-PNG.webp);/*ESTO ASIGA EL COLOR DEL CONTENEDOR*/
+        display: flex;/*ESTO ACTIVA EL FLEXBOX*/
+        align-items: center;/*ESTO ALINEA EL CONTENIDO DE MANERA VERTICAL*/
+        padding: 0 1.25rem; /*ES LO QUE ME PERMITE PONER ESPACIOS DENTRO DEL ELEMENTO (0=ARRIBA Y BAJAO)Y(20 ES DERECHA Y IZQUIERDA)*/
+        border: 5px solid#fdd700;/*ESTO LE COLOCA EL BORDE VISIBLE Y SE LE ASIGNO EL COLOR AMARILLO*/
+        gap: 2.5rem; /*ESTO ES LO QUE LE DA LOS ESPACIOS ENTRE CADA ELEMENTO*/
+        flex-wrap: wrap;/*ESTO HACE QUE EL CONTENEDOR SE ADAPTE Y SEA RESPONSIVE*/
+        width:100%; /*HACE QUE EL ANCHO DEL CONTENEDOR SEA DEL 100%*/}
+    
+
+        .LOGO-PRINCIPAL{
+            height:100%;/*ESTO HACE QUE LA IMAGEN OCUPE TODO DE MANERA VERITICA EL DECIR TODO EL ALTO */
+            width:250px;/*ESTO CONFIGURA EL ANCHO DE MANERA AUTOMATICA PARA QUE NO SE DEFORME LA IMAGEN*/
+        transform: translateX(-1.25rem);/*CON ESTO LO CORRO HACIA LA IZQUIERDA*/}
+        .MENU-PRINCIPAL ul {/*ESTO INVOCA AL LA CLASE MENU PRINCIPAL CON EL CONTENIDO DE >UL>*/
+                display: flex; /*CON ESTO ACTIVAMOS EL FLEXBOX*/
+                list-style: none;/*CON ESTO LE QUITAMOS LOS PUNTOS O VIÑETAS*/
+                gap: 1.875rem;/* LE DAMOS UN ESPACIO ENTRE CADA ELEMENTO O PALABRA*/
+            margin-left:6.25rem;/*CON ESTO TAMBIEN SE AMUENTA LA MARGEN DE LA IZQUIERDA PARA MOVER EL MENU*/
+        transform: translateX(-55px);/*CON ESTO LO CORRO HACIA LA IZQUIERDA*/}
+        .MENU-PRINCIPAL a{
+                text-decoration: none;/*CON ESTO LE QUITAMOS EL SUBRAYADO POR SER UN IPERVINCULO*/
+                font-weight: bold;/*CON ESTO APLICAMOS UNA NEGRILLA A CADA PALABRA*/
+                font-size:1rem;/*CON ESTO LE DAMOS EL TAMAÑO A CADA LETRA*/ 
+            color: cornsilk;/*CON ESTO LE DAMOS EL COLOR A LAS LETRAS*/}
+.LOGO-PRINCIPAL2{
+     height: 100%;/*ESTO HACE QUE LA IMAGEN OCUPE TODO DE MANERA VERITICA EL DECIR TODO EL ALTO */
+            width:250px;/*ESTO CONFIGURA EL ANCHO DE MANERA AUTOMATICA PARA QUE NO SE DEFORME LA IMAGEN*/
+    margin-left:auto;/*CON ESTO pongo la imagen a la derecha usando el flexbox PORQUE LE DOY LA ORDEN DE QUE OCUPE TDOD EL ESPACIO DE LA MARGEN HACIA LA IZQUIERDA*/
+margin-right:-1.25rem;/*CON ESTO LO MUEVO MAS HACIA LA DERECHA Y USO EL NEGATIVO PORQUE LA MARGEN EN EL FLEXBOX YA ESTA AL TOPE*/}
+    .MENU-PRINCIPAL li {/*CON ESTO PUEDO GENERAR QUE CADA ELEMENTO DEL MENU TENGA UN CUADRO PROPIO*/
+        background-color:black;/*CON ESTO LE DOY COLOR AL CUADRO*/
+        padding: 0.5rem 1rem;/*TAMAÑANO DEL CUADRO QUE ES EN ESTE CASO EL TAMAÑO DE LA LETRA*/
+        border-radius: 0.3125rem;/*CON ESTO QUE LOS BORDES SEAN REDONDOD*/
+        transition: background-color 0.3s ease;}/*CON ESTO QUE AL PASAR EL MAUSE CAMBIE EL CUADRO*/
+        .MENU-PRINCIPAL li:hover{/*CON ESTO CONFIGURO EL COLOR DEL CUADRO*/
+            background-color:#002f6c;}/*CON ESTO LEIGO EL COLOR QUE VA A PONER CUANDO SE PASE EL MOSUSE*/
+        .CUERPO-DE-PAGINA{/*CON ESTO INVOCO EL PRIMER CONTENEDOR DEL MAIN*/
+         min-height: calc(100vh - 150px); /* Altura de toda la pantalla(100vh) menos (-150px) de lo que ocupa el header header */
+         background-image:url(/IMAGENES/FONDO.PNG);
+          background-size: cover;
+           padding: 1rem;/*COLOCA UN ESPACIO DE 1REM =16PX EN TODOS LOS LADOS DEL CONTENEDOR*/
+          overflow: hidden; /* evita que algo se desborde si no debe */}
+            .PRODUCTO1{/*CON ESTO LE DOY ESTILOS AL CONTNEDOR DE PRODUCTO 1*/
+                width: 200PX;/* ANCHO DEL CONTENEDOR */
+                height: 250PX;/* ALTO DEL CONTENEDOR */
+                background-color:cornsilk;/* solo para que lo veas en pantalla */
+            margin-left:810PX;}
+            .PRODUCTO1 H2{color: #002f6c;
+            font-weight:bold;}
+            .PRODUCTO1 P{font-weight: bold;}
+            
