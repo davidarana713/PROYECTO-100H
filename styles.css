@@ -1,140 +1,177 @@
-*{     margin: 0;
-    padding: 0;
-    box-sizing: border-box;}/*esto reinicia los estilos del navegador y hace que todo se vea iagual en todos los navegadores*/
-   .contenedor1 {
-        height: 9.375rem;/*ESTO ES LO QUE LE DA ALTULA AL CONTENEDOR*/
-        background-image:url(/IMAGENES/FONDO\ AMARILLLO-PNG.webp);/*ESTO ASIGA EL COLOR DEL CONTENEDOR*/
-        display: flex;/*ESTO ACTIVA EL FLEXBOX*/
-        align-items: center;/*ESTO ALINEA EL CONTENIDO DE MANERA VERTICAL*/
-        padding: 0 20PX; /*ES LO QUE ME PERMITE PONER ESPACIOS DENTRO DEL ELEMENTO (0=ARRIBA Y BAJAO)Y(20 ES DERECHA Y IZQUIERDA)*/
-        border: 5px solid #8d8d8d;/*ESTO LE COLOCA EL BORDE VISIBLE Y SE LE ASIGNO EL COLOR AMARILLO*/
-        gap: 2.5rem; /*ESTO ES LO QUE LE DA LOS ESPACIOS ENTRE CADA ELEMENTO*/
-        flex-wrap: wrap;/*ESTO HACE QUE EL CONTENEDOR SE ADAPTE Y SEA RESPONSIVE*/
-        width:100%; /*HACE QUE EL ANCHO DEL CONTENEDOR SEA DEL 100%*/}
-        .HEADER{
-            position: sticky;
-            top:0;}
-     .LOGO-PRINCIPAL{
-            height:100%;/*ESTO HACE QUE LA IMAGEN OCUPE TODO DE MANERA VERITICA EL DECIR TODO EL ALTO */
-            width:250px;/*ESTO CONFIGURA EL ANCHO DE MANERA AUTOMATICA PARA QUE NO SE DEFORME LA IMAGEN*/
-        transform: translateX(-1.25rem);/*CON ESTO LO CORRO HACIA LA IZQUIERDA*/}
-        .MENU-PRINCIPAL ul {/*ESTO INVOCA AL LA CLASE MENU PRINCIPAL CON EL CONTENIDO DE >UL>*/
-                display: flex; /*CON ESTO ACTIVAMOS EL FLEXBOX*/
-                list-style: none;/*CON ESTO LE QUITAMOS LOS PUNTOS O VIÑETAS*/
-                gap: 1.875rem;/* LE DAMOS UN ESPACIO ENTRE CADA ELEMENTO O PALABRA*/
-            margin-left:6.25rem;/*CON ESTO TAMBIEN SE AMUENTA LA MARGEN DE LA IZQUIERDA PARA MOVER EL MENU*/
-        transform: translateX(-55px);/*CON ESTO LO CORRO HACIA LA IZQUIERDA*/}
-        .MENU-PRINCIPAL a{
-                text-decoration: none;/*CON ESTO LE QUITAMOS EL SUBRAYADO POR SER UN IPERVINCULO*/
-                font-weight: bold;/*CON ESTO APLICAMOS UNA NEGRILLA A CADA PALABRA*/
-                font-size:1rem;/*CON ESTO LE DAMOS EL TAMAÑO A CADA LETRA*/ 
-            color:white;/*CON ESTO LE DAMOS EL COLOR A LAS LETRAS*/}
-.CARRITO{/*CON ESTO INVOCO EL CARRITO PARA AJUSTAR Y DARLE ESTILOS*/
-     height:35PX;/*ESTO HACE QUE LA IMAGEN OCUPE TODO DE MANERA VERITICA EL DECIR TODO EL ALTO */
-            width:70PX;/*ESTO CONFIGURA EL ANCHO DE MANERA AUTOMATICA PARA QUE NO SE DEFORME LA IMAGEN*/
-    margin-left:auto;/*CON ESTO pongo la imagen a la derecha usando el flexbox PORQUE LE DOY LA ORDEN DE QUE OCUPE TDOD EL ESPACIO DE LA MARGEN HACIA LA IZQUIERDA*/
-margin-right:-20pxs;/*CON ESTO LO MUEVO MAS HACIA LA IZUIERDA Y USO EL NEGATIVO PORQUE LA MARGEN EN EL FLEXBOX YA ESTA AL TOPE*/}
-.LOGIN{/*CON ESTO INVOCO EL LOGIN PARA AJUSTAR Y DARLE ESTILOS*/
-     height:35PX;/*ESTO HACE QUE LA IMAGEN OCUPE TODO DE MANERA VERITICA EL DECIR TODO EL ALTO */
-            width:70PX;/*ESTO CONFIGURA EL ANCHO DE MANERA AUTOMATICA PARA QUE NO SE DEFORME LA IMAGEN*/
-    margin-left:20PX;/*CON ESTO pongo la imagen a la derecha usando el flexbox PORQUE LE DOY LA ORDEN DE QUE OCUPE TDOD EL ESPACIO DE LA MARGEN HACIA LA IZQUIERDA*/}
-    .MENU-PRINCIPAL li {/*CON ESTO PUEDO GENERAR QUE CADA ELEMENTO DEL MENU TENGA UN CUADRO PROPIO*/
-        /*Background-color:;CON ESTO LE DOY COLOR AL CUADRO*/
-        padding: 0.5rem 1rem;/*TAMAÑANO DEL CUADRO QUE ES EN ESTE CASO EL TAMAÑO DE LA LETRA*/
-        border-radius: 0.3125rem;/*CON ESTO QUE LOS BORDES SEAN REDONDOD*/
-        border:3px solid white;
-        transition: background-color 0.3s ease;}/*CON ESTO QUE AL PASAR EL MAUSE CAMBIE EL CUADRO*/
-        .MENU-PRINCIPAL li:hover{/*CON ESTO CONFIGURO EL COLOR DEL CUADRO*/
-            background-color:#8d8d8d;}/*CON ESTO LEIGO EL COLOR QUE VA A PONER CUANDO SE PASE EL MOSUSE*/
-        .CUERPO-DE-PAGINA{/*CON ESTO INVOCO EL PRIMER CONTENEDOR DEL MAIN*/
-         min-height: calc(100vh - 150px); /* Altura de toda la pantalla(100vh) menos (-150px) de lo que ocupa el header header */
-         background-image:url(/IMAGENES/FONDO.PNG);/*CON ETO LE PONGO UN FONFO A LA PAGINA EN ESTE CASO ES UNA IMAGEN*/
-          background-size: cover;
-           padding: 1rem;/*COLOCA UN ESPACIO DE 1REM =16PX EN TODOS LOS LADOS DEL CONTENEDOR*/
-          overflow: hidden; /* evita que algo se desborde si no debe */
-         display: flex;}
-         .CATEGORIAS{
-            background-color: #002f6c;
-            width: 280px;
-            height: 400px;
-        border:5px solid#8d8d8d;}
-        .CATEGORIAS H2{color: white;
-        font-family:'Times New Roman', Times, serif;
-    margin-left:50px;}
-            .PRODUCTO1{/*CON ESTO LE DOY ESTILOS AL CONTNEDOR DE PRODUCTO 1*/
-                width: 300PX;/* ANCHO DEL CONTENEDOR */
-                height: 350PX;/* ALTO DEL CONTENEDOR */
-                background-color:white;/*CON ESTO LE DOY EL COLOR DE FONDO AL CONTENEDOR */
-            margin-left:20PX;/*CON ESTO CORRO EL CONTENEDOR A LA DERECHA Y LE PONGO UNA MEDIDA PARA ACOMODARLO EN PANTALLA*/
-            border:5px solid #002f6c;
-        border-radius: 4%;}
-            .PRODUCTO1 H2{color: #002f6c;
-            font-weight:bold;}/*CON ESTO LE PONGO ESTILOS A AL <H2>  DEL CONTENEDOR*/
-            .PRODUCTO1 P{font-weight: bold;}/*CON ESTO LE DOY ESTILOS AL <P> DEL CONTENEDOR*/
-            .PRODUCTO1 img{margin-left:35px;}
-            /*-------------------------------------------------------------------------*/
-            .PRODUCTO2{/*CON ESTO LE DOY ESTILOS AL CONTNEDOR DE PRODUCTO 2*/
-                width: 300PX;/* ANCHO DEL CONTENEDOR */
-                height: 350PX;/* ALTO DEL CONTENEDOR */
-                background-color:white;/*CON ESTO LE DOY EL COLOR DE FONDO AL CONTENEDOR */
-             margin-left:20PX;/*CON ESTO CORRO EL CONTENEDOR A LA DERECHA Y LE PONGO UNA MEDIDA PARA ACOMODARLO EN PANTALLA*/
-             border:5px solid #002f6c ;
-            border-radius: 4%;}
-            .PRODUCTO2 H2{color: #002f6c;
-            font-weight:bold;}/*CON ESTO LE PONGO ESTILOS A AL <H2>  DEL CONTENEDOR*/
-            .PRODUCTO2 P{font-weight: bold;}/*CON ESTO LE DOY ESTILOS AL <P> DEL CONTENEDOR*/
-            .PRODUCTO2 img{margin-left:35px;}
-            /*-------------------------------------------------------------------------------*/
-            .PRODUCTO3{/*CON ESTO LE DOY ESTILOS AL CONTNEDOR DE PRODUCTO 2*/
-                width: 300PX;/* ANCHO DEL CONTENEDOR */
-                height: 350PX;/* ALTO DEL CONTENEDOR */
-                background-color:white;/*CON ESTO LE DOY EL COLOR DE FONDO AL CONTENEDOR */
-             margin-left:20PX;/*CON ESTO CORRO EL CONTENEDOR A LA DERECHA Y LE PONGO UNA MEDIDA PARA ACOMODARLO EN PANTALLA*/
-             border:5px solid #002f6c ;
-            border-radius: 4%;}
-             .PRODUCTO3 H2{color: #002f6c;
-            font-weight:bold;}/*CON ESTO LE PONGO ESTILOS A AL <H2>  DEL CONTENEDOR*/
-            .PRODUCTO3 P{font-weight: bold;}/*CON ESTO LE DOY ESTILOS AL <P> DEL CONTENEDOR*/
-            .PRODUCTO3 img{margin-left:35px;}
-            /*-----------------------------------------------------------------------------*/
-            .CATEGORIAS{
-            background-color: #002f6c;
-            width: 280px;
-            height: 400px;
-            border:5px solid#8d8d8d;} 
-            .PRODUCTO4{/*CON ESTO LE DOY ESTILOS AL CONTNEDOR DE PRODUCTO 2*/
-                width: 300PX;/* ANCHO DEL CONTENEDOR */
-                height: 350PX;/* ALTO DEL CONTENEDOR */
-                background-color:white;/*CON ESTO LE DOY EL COLOR DE FONDO AL CONTENEDOR */
-             margin-left:20PX;/*CON ESTO CORRO EL CONTENEDOR A LA DERECHA Y LE PONGO UNA MEDIDA PARA ACOMODARLO EN PANTALLA*/
-             border:5px solid #002f6c ;
-            border-radius: 4%;}
-            .PRODUCTO4 H2{color: #002f6c;
-            font-weight:bold;}/*CON ESTO LE PONGO ESTILOS A AL <H2>  DEL CONTENEDOR*/
-            .PRODUCTO4 P{font-weight: bold;}/*CON ESTO LE DOY ESTILOS AL <P> DEL CONTENEDOR*/
-            .PRODUCTO4 img{margin-left:35px;}
-            /*-------------------------------------------------------------------------------------*/
-             .PRODUCTO5{/*CON ESTO LE DOY ESTILOS AL CONTNEDOR DE PRODUCTO 2*/
-                width: 300PX;/* ANCHO DEL CONTENEDOR */
-                height: 350PX;/* ALTO DEL CONTENEDOR */
-                background-color:white;/*CON ESTO LE DOY EL COLOR DE FONDO AL CONTENEDOR */
-             margin-left:20PX;/*CON ESTO CORRO EL CONTENEDOR A LA DERECHA Y LE PONGO UNA MEDIDA PARA ACOMODARLO EN PANTALLA*/
-             border:5px solid #fffd00 ;
-            border-radius: 4%;}
-             .PRODUCTO5 H2{color: #002f6c;
-            font-weight:bold;}/*CON ESTO LE PONGO ESTILOS A AL <H2>  DEL CONTENEDOR*/
-            .PRODUCTO5 P{font-weight: bold;}/*CON ESTO LE DOY ESTILOS AL <P> DEL CONTENEDOR*/
-            .PRODUCTO5 img{margin-left:35px;}
-            /*----------------------------------------------------------------------*/
-             .PRODUCTO6{/*CON ESTO LE DOY ESTILOS AL CONTNEDOR DE PRODUCTO 2*/
-                width: 300PX;/* ANCHO DEL CONTENEDOR */
-                height: 350PX;/* ALTO DEL CONTENEDOR */
-                background-color:white;/*CON ESTO LE DOY EL COLOR DE FONDO AL CONTENEDOR */
-             margin-left:20PX;/*CON ESTO CORRO EL CONTENEDOR A LA DERECHA Y LE PONGO UNA MEDIDA PARA ACOMODARLO EN PANTALLA*/
-             border:5px solid #002f6c;
-            border-radius: 4%;}
-            .PRODUCTO6 H2{color: #002f6c;
-            font-weight:bold;}/*CON ESTO LE PONGO ESTILOS A AL <H2>  DEL CONTENEDOR*/
-            .PRODUCTO6 P{font-weight: bold;}/*CON ESTO LE DOY ESTILOS AL <P> DEL CONTENEDOR*/
-            .PRODUCTO6 img{margin-left:35px;}
-            
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*esto reinicia los estilos del navegador y hace que todo se vea iagual en todos los navegadores*/
+
+header{
+  position:sticky;
+  top: 0;
+  z-index:10;
+}
+.CONTENEDOR-PADRE-HEADER1 {
+  background-color: #011f26;
+  width: 100%;
+  height: 80PX;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.LOGO-PRINCIPAL {
+  width: 100PX;
+  height: 80PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LOGO-COLOMBIA {
+  width: 70PX;
+  height: 70PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BARRA-DE-NAVEGACION {
+  height: 70px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 4/8;
+}
+.link_login{
+    height: 50px;
+  width: 50px;
+  margin: auto;
+  grid-column: 9/10;
+
+}
+.LOGIN {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+
+.CARRITO {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  grid-column: 10/11;
+}
+
+.CONTENEDOR-PADRE-HEADER2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b5446;
+  width: 100%;
+  height: 40PX;
+  margin: auto;
+  padding: 8px;
+}
+.MENU-OPTIONS{
+  display: flex;
+  gap: 8px;
+}
+.MENU-PRINCIPAL ul {
+  display: flex;
+  justify-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+.MENU-PRINCIPAL a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.ENVIAR-A h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.MAIN-PADRE {
+  background-image: url(/IMAGENES/FONDO.PNG);
+}
+
+.TARJETAS-PADRE-PRINCIPAL {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding:5px;
+}
+
+.PRODUCTOS-PADRE1{
+  margin-top:10px;
+  display: flex;
+  gap:30px;
+  padding:9PX;
+}
+
+.PRODUCTOS-PADRE2{
+  margin-top:10px;
+  display: flex;
+  gap:30px;
+  padding:9PX;
+}
+footer{
+  background-color:#0b5446;
+  height: 40px;
+  width:100%;
+}
+footer h2{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/*--------------------MODAL-LOGIN---------------------*/
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en toda la pantalla */
+  z-index: 1000; /* Encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho total */
+  height: 100%; /* Alto total */
+  background-color: rgba(0,0,0,0.5); /* Fondo oscuro transparente */
+}
+
+.modal-content{
+  background-color:#011f26;
+  margin: 5% auto;/*centrado vertical y horizontal*/
+  padding: 20px;/*espacio interno*/
+  width: 300px;/*ancho del cuadro*/
+  max-width:60%;/*pata que en pantallas pequeñas no se salga y se oblligue a seguir el width y el boostrap no lo sobreescriba*/
+  border-radius: 8px;
+  box-sizing: border-box;/*evita que el pading asuma un ancho extra*/
+}
+.modal-content h2{
+  color: white;
+}
+.modal-content label{
+  color: white;
+}
+.modal-content img{
+  width: 250px;
+  height: 250px;
+}
+.close{
+  float: right;/*lo pone en la esquina superior derecha*/
+  font-size: 24px;/*le dal el tamañno al simbolo (&times; x)*/
+  cursor: pointer;/*cmabia el cursor a mani*/
+  color: white;
+}
+
+@media (max-width:992px){
+  
+
+}
